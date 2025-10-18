@@ -12,6 +12,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 
 # create the SQLAlchemy engine
 engine = create_engine(DATABASE_URL)
+print(engine.echo)
 
 # create Base class for models
 Base = declarative_base()
